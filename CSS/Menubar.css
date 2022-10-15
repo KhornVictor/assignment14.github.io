@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+ h1,p{
+    margin: 0px;
+    padding: 0%;
+ }
+.main-menu-bar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.Profile-IMG{
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+    margin: 30px 15px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.Profile-IMG:hover{
+    transform: scale(1.1);
+}
+
+.Profile-IMG img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name{
+    display: block;
+   color: white;
+    margin: 26px 20px;
+    margin-bottom: 60px;
+}
+
+.main-menu{
+    padding: 0%;
+    margin: 0px;
+    font-size: 23px;
+    list-style: none;
+}
+
+.main-menu li{
+    padding: 20px 70px;
+    transition: 0.5s;
+
+}
+
+.main-menu li a{
+    text-decoration: none; 
+    color: white;
+}
+
+.main-menu li a i{
+    letter-spacing: 20px;
+}
+
+.main-menu li:hover{
+    background-color: gray;
+    transform: scale(1.1);
+
+}
+
+.new-menu-bar{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    display: none;
+}
+.new-menu-bar ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+.new-menu-bar ul li{
+    padding: 20px;
+}
+.new-menu-bar ul li:first-child{
+    float: left;
+    font-size: 32px;
+    color: white;
+
+}
+.new-menu-bar ul li:last-child{
+    float: right;
+}
+
+.new-menu-bar ul li:last-child div{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    overflow: hidden;
+    border: yellow 1px solid;
+}
+
+.new-menu-bar ul li:last-child div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1120px) {
+    .card p{
+        font-size: 14px;
+    }
+    .main-menu-bar{
+        display: none;
+    }
+    .new-menu-bar{
+        display: block;
+    }
+    .new-menu-bar{
+        margin-bottom: 100px;
+    }
+}
